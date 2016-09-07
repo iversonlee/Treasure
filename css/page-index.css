@@ -1,0 +1,413 @@
+/*编写页面的CSS样式*/
+/*为body来设置背景*/
+body{
+	background: url(../img/bd-bg.png) repeat-x scroll top left;
+}
+
+/*清除浮动的代码*/
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*兼容ie6的清浮动*/
+.clearfix{
+	zoom: 1;
+}
+
+
+/*
+ * w这个类用来设置元素的宽度和居中
+ */
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+
+/*设置header*/
+.header{
+	/*设置头部的header*/
+	padding: 37px 0 46px 0;
+	/*background-color: red;*/
+	
+}
+
+/*设置logo*/
+.header .logo{
+	/*设置左外边距*/
+	margin-left: 15px;
+	
+}
+
+/*设置导航条*/
+.nav{
+	/*向右浮动*/
+	float: right;
+	/*设置外边距*/
+	margin: 19px 2px 0 0;
+}
+
+/*设置导航条中的li*/
+.nav li{
+	/*向左浮动*/
+	float: left;
+	/*设置左边框*/
+	border-left: 1px dotted #d6d6d6;
+	/*设置padding*/
+	padding: 0 10px 8px;
+}
+
+/*设置导航条中的字体*/
+.nav a{
+	/*设置字体*/
+	font: bold 14px Georgia,serif;
+	/*设置颜色*/
+	color: #666;
+	/*清除下划线*/
+	text-decoration: none;
+}
+
+/*设置超链接的鼠标移入的样式*/
+.nav a:hover{
+	/*设置下划线*/
+	text-decoration: underline;
+	/*设置一个颜色*/
+	color: #969696;
+}
+
+.nav p{
+	
+	font: 11px Tahoma , sans-serif;
+	color: #b7b7b7;
+	
+}
+
+/*设置banner*/
+.banner{
+	height: 355px;
+	background: url(../img/banner-line.png) no-repeat scroll bottom center;
+	/*设置一个相对定位*/
+	position: relative;
+}
+
+/*设置导航小圆点*/
+
+.banner .pointer_div{
+	/*设置绝对定位*/
+	position: absolute;
+	
+	/*设置偏移量*/
+	left: 19px;
+	bottom: 25px;
+}
+
+.banner .pointer{
+	/*使a元素浮动*/
+	float: left;
+	
+	/*指定宽和高*/
+	width: 17px;
+	height: 17px;
+	/*设置背景*/
+	background: url(../img/sprite.png) no-repeat scroll top left;
+	/*设置右外边距*/
+	margin-right: 4px;
+}
+
+/*设置选中的小圆点*/
+.banner .active , .banner .pointer:hover{
+	background: url(../img/sprite.png) no-repeat scroll -27px 0;
+}
+
+/*设置content*/
+.content h2{
+	/*设置字体*/
+	font: bold 24px Georgia;
+	/*设置颜色*/
+	color: #000;
+	/*设置文字居中*/
+	text-align: center;
+	/*设置padding*/
+	padding: 10px 0 29px 0;
+	/*设置背景*/
+	background: url(../img/break.png) no-repeat scroll bottom center;
+}
+
+/*设置内容中的div*/
+.pl , .cs , .uc{
+	/*设置浮动*/	
+	float: left;
+	/*设置一个宽度*/
+	width: 300px;
+	
+	/*设置一个左外边距*/
+	margin-right: 20px;
+}
+
+.uc{
+	margin-right: 0;
+}
+
+/*设置内容*/
+.content h3{
+	font: 21px Georgia;
+	color: #11719e;
+	margin-top: 30px;
+}
+
+/*设置副标题*/
+.content .p1{
+	font: 12px Helvetica;
+	color: #8c8c8c;
+}
+
+/*设置内容中的图片*/
+.content .img_div{
+	margin-top: 16px;
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat scroll top left;
+	/*图片水平居中*/
+	text-align: center;
+	padding-top: 12px;
+}
+
+/*设置p2*/
+.content .p2{
+	font: 13px Helvetica;
+	color: #3e3e3e;
+	margin: 14px 0;
+	/*设置行间距*/
+	line-height: 20px;
+	/*设置词之间的距离*/
+	word-spacing: 2px;
+}
+
+/*设置超链接*/
+.content .lm{
+	/*设置a为块元素*/
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn01.png) no-repeat scroll top left;
+	font: 12px/40px Helvetica;
+	color: #016999;
+	text-decoration: none;
+	/*设置文字的缩进*/
+	text-indent: 1em;
+	/*设置一个下外边距*/
+	margin-bottom: 32px;
+}
+
+.content .lm:hover{
+	color: #01adfd;
+}
+
+/*设置contact*/
+.contact{
+	background: url(../img/break.png) no-repeat scroll top center;
+	padding-bottom:55px;
+}
+
+/*设置联系栏的三个div的大小*/
+.sc , .co , .nu{
+	/*设置浮动*/
+	float: left;
+	/*设置一个宽度*/
+	width: 300px;
+
+	/*指定右外边距*/
+	margin-right: 20px;
+	
+	/*开启相对定位*/
+	position: relative;
+
+}
+
+.nu{
+	margin-right: 0;
+}
+
+/*设置标题的样式*/
+.contact h3{
+	font: 18px Georgia;
+	color: #444;
+	padding: 44px 0 9px 0;
+	/*设置下边框*/
+	border-bottom: 1px #d3d3d3 dashed;
+	/*设置下外边距*/
+	margin-bottom: 15px;
+}
+
+/*设置文本框*/
+.contact .text{
+	background: url(../img/input.png) no-repeat scroll top left;
+	width: 276px;
+	height: 31px;
+	/*去掉默认的边框*/
+	border: none;
+	/*统一设置文本框的内边距*/
+	padding: 1px 10px;
+	/*设置行高，使文字垂直居中*/
+	line-height: 31px;
+	/*设置下外边距*/
+	margin-bottom: 16px;
+}
+
+/*设置文本域*/
+.contact .tarea{
+	background: url(../img/textarea.png) no-repeat scroll top left;
+	width: 284px;
+	height: 130px;
+	/*去掉默认的边框*/
+	border: none;
+	/*在ie6和ie8中文本域默认会显示滚动条,清除滚动条*/
+	overflow: auto;
+	/*设置文本域不能修改大小*/
+	resize: none;
+	/*取消外边距*/
+	margin: 0 0 11px 0;
+	padding: 2px;
+	padding-left: 10px;
+	
+}
+
+/*设置按钮*/
+.contact .btn{
+	background: url(../img/sprite.png) no-repeat scroll 0 -27px;
+	width: 163px;
+	height: 32px;
+	/*去掉默认的边框*/
+	border: none;
+	/*去掉按钮中padding*/
+	padding: 0;
+	/*设置字体*/
+	font: 13px Georgia ;
+	color: #fff;
+	/*设置文字的居中*/
+	text-align: left;
+	text-indent: 1em;
+	
+	/*开启绝对定位*/
+	position: absolute;
+	
+	/*设置偏移量*/
+	left: 0;
+	top: 330px;
+	
+	/*设置光标的样式
+	 	pointer表示小手
+	 	default表示箭头
+	 
+	 cursor这个样式不是必须放到hover伪类中的	
+	 * */
+	cursor: pointer;
+}
+/**
+ * IE6只支持a的hover
+ */
+.contact .btn:hover{
+	color: #ff0;
+	
+	
+	
+}
+
+/*设置联系栏的左边*/
+.sc p{
+	font: 12px Helvetica;
+	color: #444;
+	/*设置p元素的行高*/
+	line-height: 1;
+}
+
+/*设置icon_div*/
+.icon_div{
+	margin-top: 4px;
+}
+
+/*设置小图片*/
+.icon_div a{
+	/*使所有的a浮动*/
+	float: left;
+	/*设置右外边距*/
+	margin-right: 6px;
+	_margin-right: 4px;
+}
+
+/*设置左边的第二个标题*/
+.sc .nl{
+	font: bold 18px Gill Sans MT;
+	padding: 0 0 10px 0;
+	margin: 34px 0 12px 0;
+	line-height: 1;
+}
+
+/*设置左边栏的文本框*/
+.sc .text{
+	margin: 16px 0 11px 0;
+	/*为ie6设置一个margin-top*/
+	_margin-top:21px;
+}
+
+/*设置联系栏右侧的段落*/
+.nu p{
+	/*设置一个下边框*/
+	border-bottom: 1px #d3d3d3 dashed;
+	/*设置字体*/
+	font:12px Helvetica;
+	color: #444;
+	
+	/*设置内边距*/
+	padding:  0 0 10px 66px;
+	
+	/*设置下外边距*/
+	margin-bottom: 14px;
+	
+	/*设置一个高度*/
+	height: 57px;
+	
+	/*设置ie6的高度*/
+	_height:59px;
+}
+
+.nu_p1{
+	background: url(../img/pic/1.gif) no-repeat scroll top left;
+}
+.nu_p2{
+	background: url(../img/pic/2.gif) no-repeat scroll top left;
+}
+.nu_p3{
+	background: url(../img/pic/3.gif) no-repeat scroll top left;
+}
+
+/*设置footer*/
+.footer{
+	height: 173px;
+	background: #333;
+	/*设置上边框*/
+	border-top: 10px solid #4c4c4c;
+}
+
+/*设置div的内边距*/
+.footer .w{
+	padding: 18px 22px 0 10px;
+}
+/*设置文字的样式*/
+.footer p , .footer a{
+	font: 11px Helvetica;
+	color: #999;
+	/*去除下划线*/
+	text-decoration: none;
+}
+
+.footer a:hover{
+	color: #c8c6c6;
+	text-decoration: underline;
+}
+
+/*设置版权信息浮动*/
+.footer .copy{
+	float: right;
+}
