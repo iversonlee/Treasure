@@ -1,11 +1,1 @@
-fighting 
-
-
-$ git add characters.html
-
-```
-然后 commit
-```
-$ git commit -m "添加了新信息"
-
-work space
+# I am ready to fight! No matter how hard tomrrow is! 
